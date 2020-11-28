@@ -395,7 +395,7 @@ namespace SendingSourceCreater
                 return false;
 
             // 属性チェック
-            // 非表示、システムフォルダは除外
+            // 非表示、システムファイルは除外
             FileAttributes attributes = File.GetAttributes(file);
             if ((attributes & FileAttributes.System) == FileAttributes.System
                 || (attributes & FileAttributes.Hidden) == FileAttributes.Hidden)
